@@ -4,15 +4,16 @@ import { AppService } from './app.service';
 import { MailerModule } from '@nestjs-modules/mailer';
 import { ConfigModule } from '@nestjs/config';
 import { ScrapperModule } from './scrapper/scrapper.module';
-
+import { ScheduleModule } from '@nestjs/schedule';
 @Module({
   imports: [
     ConfigModule.forRoot(),
+    ScheduleModule.forRoot(),
     MailerModule.forRoot({
       transport: {
         host: 'smtp.gmail.com',
         port: 587,
-        secure: false, 
+        secure: false,
         auth: {
           user: process.env.BOITE_MAIL,
           pass: process.env.APP_ACCESS_PASSWORD,
