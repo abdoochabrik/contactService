@@ -25,6 +25,7 @@
     "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/schedule": "^3.0.2",
     "nodemailer": "^6.9.4",
     "pug": "^3.0.2",
     "reflect-metadata": "^0.1.13",
